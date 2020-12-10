@@ -1,0 +1,40 @@
+class Rectangle:
+        
+                
+##        def main():
+##                print('Please enter a pair of float values')
+##        if __name__ == "__main__":
+##            main()
+        def __init__(self,length,width):
+                self.length=length
+                self.width=width
+             
+        def getLength(self):
+                return self.length
+        
+        def setLength(self,length):
+                self.length=length
+                
+        def getWidth(self):
+                return self.width
+        
+        def setWidth(self,width):
+                self.width=width
+                
+        #this method has a problem -- fix it.
+        def getArea(self):
+                return self.length*self.width
+                #return length*width
+
+        
+
+def main():
+    if __name__ == "__main__":
+        length=float(input("Enter Length : "))
+        width=float(input("Enter Width : "))   
+        r1=Rectangle(length,width)
+        print('Length : ',r1.getLength())
+        print('Width : ',r1.getWidth())
+        print('Area : ',r1.getArea())
+
+main() #calling the main function
